@@ -4,9 +4,6 @@ Defines the CLI command arguments
 import argparse
 from argparse import Namespace
 
-from golife import views
-from .patterns import get_all_patterns
-
 
 def get_command_line_args() -> Namespace:
     """
