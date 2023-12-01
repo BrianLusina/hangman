@@ -1,13 +1,18 @@
-# Game Of Life (golife)
+# Hangman
 
-[![Build](https://github.com/BrianLusina/game-of-life/actions/workflows/build.yml/badge.svg)](https://github.com/BrianLusina/game-of-life/actions/workflows/build.yml)
-[![Lint](https://github.com/BrianLusina/game-of-life/actions/workflows/lint.yml/badge.svg)](https://github.com/BrianLusina/game-of-life/actions/workflows/lint.yml)
-[![Tests](https://github.com/BrianLusina/game-of-life/actions/workflows/tests.yaml/badge.svg)](https://github.com/BrianLusina/game-of-life/actions/workflows/tests.yaml)
+[![Build](https://github.com/BrianLusina/hangman/actions/workflows/build.yml/badge.svg)](https://github.com/BrianLusina/hangman/actions/workflows/build.yml)
+[![Lint](https://github.com/BrianLusina/hangman/actions/workflows/lint.yml/badge.svg)](https://github.com/BrianLusina/hangman/actions/workflows/lint.yml)
+[![Tests](https://github.com/BrianLusina/hangman/actions/workflows/tests.yaml/badge.svg)](https://github.com/BrianLusina/hangman/actions/workflows/tests.yaml)
 
-Inspired by [John Horton Conway's](https://en.wikipedia.org/wiki/John_Horton_Conway)
-[Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
-This is a [cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) simulation whose evolution depends on
-its initial state and does not require further input from any player.
+This is a command line game application inspired by [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)) which is a
+word skill game that teaches basic language skills. This game is between the computer and one human player. The computer
+will act as the selecting plater and will select
+the word to guess, process human input and handle all output.
+The human player is the guessing player, simply referred to as the player. When the player knows the word, they continue
+to guess correct letters until the word is complete.
+
+You can change the words the game will select in the [words.txt](./hangman/words.txt) file with a different choice of
+words.
 
 ## Pre-requisites
 
@@ -33,16 +38,16 @@ its initial state and does not require further input from any player.
    ```
    > When using [GNU Make](https://www.gnu.org/s/make/manual/make.html), this is a wrapper around the top commend
 
-2. Install `golife` in editable mode:
+2. Install `hangman` in editable mode:
    ```shell
-   cd golife
+   cd hangman
    pip install -e .
    ```
 
 ## Execution
 
-To execute `golife`, go ahead and run the below command:
+To execute `hangman`, go ahead and run the below command:
 
 ```shell
-golife -a
+hangman -a
 ```
