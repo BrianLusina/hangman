@@ -31,4 +31,8 @@ def validate_input(player_input: str, guessed_letters: Set[str]) -> bool:
     Returns:
         bool: True if the player input is valid, false otherwise
     """
-    return len(player_input) == 1 and player_input in string.ascii_lowercase and player_input not in guessed_letters
+    return (
+        len(player_input) == 1
+        and player_input in string.ascii_lowercase
+        and player_input not in guessed_letters
+    )
