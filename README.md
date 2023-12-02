@@ -49,5 +49,7 @@ words.
 To execute `hangman`, go ahead and run the below command:
 
 ```shell
-hangman -a
+python hangman
 ```
+
+Which will run the game. Enjoy!
