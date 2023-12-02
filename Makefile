@@ -29,7 +29,7 @@ install: ## Installs dependencies
 	pipenv install
 
 run: ## Runs application
-	hangman -a
+	python hangman
 
 .PHONY: test
 test: ## Runs tests

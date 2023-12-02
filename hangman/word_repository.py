@@ -16,6 +16,6 @@ def select_word(filename: Path = WORDS_FILE) -> str:
     Return:
         str: randomly selected word
     """
-    with open(filename, mode="r") as words:
+    with open(filename, mode="r", encoding="utf-8") as words:
         word_list = words.readlines()
     return choice(word_list).strip()
